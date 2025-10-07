@@ -61,4 +61,8 @@ sudo apt install google-chrome-stable
 
 sudo apt update && sudo apt upgrade -y
 
+mkdir /home/$USER/.config/sublime-text/Packages/User
+cd /home/$USER/.config/sublime-text/Packages/User
 wget https://raw.githubusercontent.com/kazi-amir/ubuntu-setup-dualboot-diu/main/User/CP_Ubuntu.sublime-build
+cd
+
