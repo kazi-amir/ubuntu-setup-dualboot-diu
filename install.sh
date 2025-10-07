@@ -61,4 +61,4 @@ sudo apt install google-chrome-stable
 
 sudo apt update && sudo apt upgrade -y
 
-git clone 
+wget https://raw.githubusercontent.com/kazi-amir/ubuntu-setup-dualboot-diu/main/User/CP_Ubuntu.sublime-build
