@@ -63,7 +63,7 @@ sudo apt update && sudo apt upgrade -y
 
 mkdir /home/$USER/.config/sublime-text/Packages/User
 cd /home/$USER/.config/sublime-text/Packages/User
-svn export https://github.com/kazi-amir/ubuntu-setup-dualboot-diu/tree/main/User/CP_Codes
+svn export https://github.com/kazi-amir/ubuntu-setup-dualboot-diu/trunk/User/CP_Codes
 wget https://raw.githubusercontent.com/kazi-amir/ubuntu-setup-dualboot-diu/main/User/CP_Ubuntu.sublime-build
 cd
 
