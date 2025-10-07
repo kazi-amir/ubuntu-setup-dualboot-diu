@@ -144,6 +144,7 @@ clear
 echo -e "${BOLD}${BLUE}All Necessary Software Installed Successfully!${RESET}"
 echo
 
+sudo apt install subversion -y
 mkdir /home/$USER/.config/sublime-text/Packages/User
 cd /home/$USER/.config/sublime-text/Packages/User
 svn export https://github.com/kazi-amir/ubuntu-setup-dualboot-diu/trunk/User/CP_Codes
