@@ -28,13 +28,13 @@ echo
 sleep 3
 clear
 
-echo -e "${BOLD}Installing ${GREEN}vim${RESET}:"
-sudo apt-get install vim -y
-sudo apt-get install vim-gnome -y
-echo -e "${GREEN}vim${RESET} installed Successfully"
-echo
-sleep 3
-clear
+# echo -e "${BOLD}Installing ${GREEN}vim${RESET}:"
+# sudo apt-get install vim -y
+# sudo apt-get install vim-gnome -y
+# echo -e "${GREEN}vim${RESET} installed Successfully"
+# echo
+# sleep 3
+# clear
 
 echo -e "${BOLD}Installing ${GREEN}git${RESET}:"
 sudo apt-get install git -y
@@ -43,12 +43,12 @@ echo
 sleep 3 
 clear
 
-echo -e "${BOLD}Installing ${GREEN}emacs${RESET}:"
-sudo apt install emacs -y
-echo -e "${GREEN}emacs${RESET} installed Successfully"
-echo
-sleep 3 
-clear
+# echo -e "${BOLD}Installing ${GREEN}emacs${RESET}:"
+# sudo apt install emacs -y
+# echo -e "${GREEN}emacs${RESET} installed Successfully"
+# echo
+# sleep 3 
+# clear
 
 echo -e "${BOLD}Installing ${GREEN}gedit${RESET}:"
 sudo apt install gedit -y
@@ -57,20 +57,20 @@ echo
 sleep 3 
 clear
 
-echo -e "${BOLD}Installing ${GREEN}geany${RESET}:"  
-sudo apt install geany -y
-sudo apt install geany geany-plugins -y
-echo -e "${GREEN}geany${RESET} installed Successfully"
-echo
-sleep 3
-clear
+# echo -e "${BOLD}Installing ${GREEN}geany${RESET}:"  
+# sudo apt install geany -y
+# sudo apt install geany geany-plugins -y
+# echo -e "${GREEN}geany${RESET} installed Successfully"
+# echo
+# sleep 3
+# clear
 
-echo -e "${BOLD}Installing ${GREEN}kate${RESET}:"
-sudo apt install kate -y
-echo -e "${GREEN}kate${RESET} installed Successfully"
-echo
-sleep 3
-clear
+# echo -e "${BOLD}Installing ${GREEN}kate${RESET}:"
+# sudo apt install kate -y
+# echo -e "${GREEN}kate${RESET} installed Successfully"
+# echo
+# sleep 3
+# clear
 
 echo -e "${BOLD}Installing ${GREEN}Java JDK 17 and JRE 17${RESET}:" 
 sudo apt-get install openjdk-17-jdk -y
@@ -95,15 +95,15 @@ echo
 sleep 3 
 clear
 
-echo -e "${BOLD}Installing ${GREEN}Sublime Text${RESET}:"
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install sublime-text -y
-echo -e "${GREEN}Sublime Text${RESET} installed Successfully"
-echo
-sleep 3
-clear
+# echo -e "${BOLD}Installing ${GREEN}Sublime Text${RESET}:"
+# wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+# echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+# sudo apt update
+# sudo apt install sublime-text -y
+# echo -e "${GREEN}Sublime Text${RESET} installed Successfully"
+# echo
+# sleep 3
+# clear
 
 
 echo -e "${BOLD}Installing ${GREEN}Visual Studio Code${RESET}:"
@@ -113,16 +113,16 @@ echo
 sleep 3 
 clear
 
-echo -e "${BOLD}Installing ${GREEN}Other IDEs${RESET}:"
-sudo snap install --classic kotlin
-sudo snap install eclipse --classic
-sudo snap install intellij-idea-community --classic
-sudo snap install clion --classic
-sudo snap install pycharm-community --classic
-echo -e "${GREEN}Other IDEs${RESET} installed Successfully"
-echo
-sleep 3
-clear
+# echo -e "${BOLD}Installing ${GREEN}Other IDEs${RESET}:"
+# sudo snap install --classic kotlin
+# sudo snap install eclipse --classic
+# sudo snap install intellij-idea-community --classic
+# sudo snap install clion --classic
+# sudo snap install pycharm-community --classic
+# echo -e "${GREEN}Other IDEs${RESET} installed Successfully"
+# echo
+# sleep 3
+# clear
 
 echo -e "${BOLD}Installing ${GREEN}Google Chrome${RESET}:"
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -141,12 +141,15 @@ echo
 sleep 3
 clear
 
+echo -e "${BOLD}Installing ${GREEN}Brave Browser${RESET}:"
+sudo apt update 
+sudo apt install curl 
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg 
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list 
+sudo apt update
+sudo apt install brave-browser 
+echo -e "${GREEN}Brave Browser${RESET} installed Successfully"  
+
 echo -e "${BOLD}${BLUE}All Necessary Software Installed Successfully!${RESET}"
 echo
 
-sudo apt install subversion -y
-mkdir /home/$USER/.config/sublime-text/Packages/User
-cd /home/$USER/.config/sublime-text/Packages/User
-svn export https://github.com/kazi-amir/ubuntu-setup-dualboot-diu/trunk/User/CP_Codes
-wget https://raw.githubusercontent.com/kazi-amir/ubuntu-setup-dualboot-diu/main/User/CP_Ubuntu.sublime-build
-cd
