@@ -95,15 +95,15 @@ echo
 sleep 3 
 clear
 
-# echo -e "${BOLD}Installing ${GREEN}Sublime Text${RESET}:"
-# wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-# echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-# sudo apt update
-# sudo apt install sublime-text -y
-# echo -e "${GREEN}Sublime Text${RESET} installed Successfully"
-# echo
-# sleep 3
-# clear
+echo -e "${BOLD}Installing ${GREEN}Sublime Text${RESET}:"
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt update
+sudo apt install sublime-text -y
+echo -e "${GREEN}Sublime Text${RESET} installed Successfully"
+echo
+sleep 3
+clear
 
 
 echo -e "${BOLD}Installing ${GREEN}Visual Studio Code${RESET}:"
@@ -153,3 +153,45 @@ echo -e "${GREEN}Brave Browser${RESET} installed Successfully"
 echo -e "${BOLD}${BLUE}All Necessary Software Installed Successfully!${RESET}"
 echo
 
+echo -e "${BOLD}Installing ${GREEN}Anydesk${RESET}:"
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+sudo apt update
+sudo apt install anydesk -y
+echo -e "${GREEN}Anydesk${RESET} installed Successfully"
+echo
+sleep 3
+clear
+
+echo -e "${BOLD}Installing ${GREEN}Telegram Desktop${RESET}:"
+sudo snap install telegram-desktop
+echo -e "${GREEN}Telegram Desktop${RESET} installed Successfully"
+echo
+sleep 3
+clear
+
+echo -e "${BOLD}Installing ${GREEN}VLC Media Player${RESET}:"
+sudo apt install vlc -y
+echo -e "${GREEN}VLC Media Player${RESET} installed Successfully"
+echo
+sleep 3
+clear
+
+echo -e "${BOLD}Installing ${GREEN}Discord${RESET}:"
+sudo snap install discord --classic
+echo -e "${GREEN}Discord${RESET} installed Successfully"
+echo
+sleep 3
+clear
+
+echo -e "${BOLD}Installing ${GREEN}VLC Media Player${RESET}:"
+sudo snap install vlc
+echo -e "${GREEN}VLC Media Player${RESET} installed Successfully"
+echo
+sleep 3
+clear
+
+echo -e "${BOLD}${BLUE}All Additional Software Installed Successfully!${RESET}"
+echo
+sleep 5
+clear
