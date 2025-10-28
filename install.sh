@@ -134,13 +134,6 @@ echo
 sleep 3
 clear
 
-echo -e "${BOLD}Final system update:${RESET}"
-sudo apt update && sudo apt upgrade -y
-echo -e "${GREEN}System updated Successfully${RESET}"
-echo
-sleep 3
-clear
-
 echo -e "${BOLD}Installing ${GREEN}Brave Browser${RESET}:"
 sudo apt update 
 sudo apt install curl 
@@ -187,6 +180,13 @@ clear
 echo -e "${BOLD}Installing ${GREEN}VLC Media Player${RESET}:"
 sudo snap install vlc
 echo -e "${GREEN}VLC Media Player${RESET} installed Successfully"
+echo
+sleep 3
+clear
+
+echo -e "${BOLD}Final system update:${RESET}"
+sudo apt update && sudo apt upgrade -y
+echo -e "${GREEN}System updated Successfully${RESET}"
 echo
 sleep 3
 clear
